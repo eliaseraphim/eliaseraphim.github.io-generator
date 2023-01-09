@@ -3,6 +3,7 @@ from jinja2 import Environment, FileSystemLoader
 
 HTML_FILES = {
     'output/index.html': 'pages/index.html',
+    'output/about.html': 'pages/about.html',
     'output/projects.html': 'pages/projects.html',
 }
 
