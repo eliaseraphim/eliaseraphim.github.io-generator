@@ -11,16 +11,12 @@
     <div class="container py-2">
         <div class="row">
             {% include 'structure/sidebar.html' %}
-
             {% include 'structure/side_accreditations.html' %}
-
             <!-- page -->
             <div class="col-12 col-lg-8">
                 {% include 'structure/navbar.html' %}
-
                 {% block content %}
                 {% endblock %}
-
                 {% include 'structure/page_accreditations.html' %}
             </div>
         </div>
