@@ -43,7 +43,7 @@ You can choose to include system site packages if you wish.
           - __Value__: Filename of template file `TEMPLATE_DIR`.
   - Next, update `FILENAME_SETS` if you have created any new dictionaries for other directories.
 
-### To Run
+### To Generate
 `python generator.py`
 
 ## Dependencies
