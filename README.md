@@ -8,9 +8,11 @@ Generator Repository for Github Page
 ### Installing Packages:
 ```
 mkvirtualenv -a PATH_TO_PROJECT eliaseraphim.github.io-generator
-source PATH_TO_VEN
+source PATH_TO_VENV
 pip install jinja2==3.1.2
 ```
+
+You can choose to include system site packages if you wish.
 
 ### To Run
 `python generator.py`
