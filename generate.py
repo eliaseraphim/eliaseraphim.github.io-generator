@@ -1,5 +1,5 @@
 from jinja2 import Environment, FileSystemLoader
-from settings import BASE_DIR, FILENAME_SETS, TEMPLATE_DIR
+from settings import BASE_DIR, TEMPLATE_DIR, FILENAME_SETS
 
 import os
 

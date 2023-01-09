@@ -16,7 +16,7 @@ You can choose to include system site packages if you wish.
 
 ### To Add Files to Templates
 - HTML
-  - If page, create the file in `/templates/pages`.
+  - If page, create the file in `/templates.
     - Extend from `base.html`
   - If part of the structure, create the file in `/structure`.
     - Include the file in base.html.
