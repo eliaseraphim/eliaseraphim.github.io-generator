@@ -1,0 +1,54 @@
+:root {
+    --light-shade: #619b8a;
+    --light-accent: #a1c181;
+    --brand-color: #fcca46;
+    --dark-accent: #fe7f2d;
+    --dark-shade: #233d4d;
+}
+
+/* universal rules */
+body {
+    background-color: var(--dark-shade);
+    color: var(--light-shade);
+    font-family: "Cascadia Mono light", monospace;
+}
+
+a,
+a:link,
+a:hover,
+a:visited {
+    color: var(--light-accent);
+    text-decoration: none;
+}
+
+h1 {
+    color: var(--brand-color);
+}
+
+/* sidebar */
+.sidebar .avatar {
+    border-radius: 500px;
+}
+
+.sidebar .link-icon {
+    width: 25px;
+    min-width: 20px;
+}
+
+.sidebar .copy-btn {
+    padding: 0 10px 4px;
+}
+
+/* navbar */
+.navbar-brand img {
+    height: 75px;
+    border-radius: 75px;
+}
+
+/* projects */
+a.project-repo,
+a.project-repo:link,
+a.project-repo:hover,
+a.project-repo:visited {
+    color: var(--dark-accent);
+}
