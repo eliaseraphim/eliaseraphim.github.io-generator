@@ -10,19 +10,26 @@ TEMPLATE_ENVIRONMENT = Environment(
 
 
 def clean():
-    for filename_set in FILENAME_SETS:
-        for filename in filename_set:
-            file = os.path.join(BASE_DIR, filename)
-            if os.path.exists(file):
-                os.remove(file)
+    def remove_file(_filename):
+        file = os.path.join(BASE_DIR, _filename)
+        if os.path.exists(file):
+            os.remove(file)
 
 
-def create_site():
     for filename_set in FILENAME_SETS:
         for filename in filename_set:
-            with open(filename, 'w') as file:
-                data = render_template(filename_set[filename], {})
-                file.write(data)
+            remove_file(filename)
+
+
+def create():
+    def write_to_file(_filename):
+        with open(_filename, 'w') as file:
+            data = render_template(filename_set[filename], {})
+            file.write(data)
+
+    for filename_set in FILENAME_SETS:
+        for filename in filename_set:
+            create_file(filename)
 
 
 def render_template(filename, context):
@@ -31,7 +38,7 @@ def render_template(filename, context):
 
 def main():
     clean()
-    create_site()
+    create()
 
 
 if __name__ == '__main__':
