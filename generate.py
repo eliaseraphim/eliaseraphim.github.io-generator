@@ -15,21 +15,20 @@ def clean():
         if os.path.exists(file):
             os.remove(file)
 
-
     for filename_set in FILENAME_SETS:
         for filename in filename_set:
             remove_file(filename)
 
 
 def create():
-    def write_to_file(_filename):
+    def render_file(_filename):
         with open(_filename, 'w') as file:
             data = render_template(filename_set[filename], {})
             file.write(data)
 
     for filename_set in FILENAME_SETS:
         for filename in filename_set:
-            create_file(filename)
+            render_file(filename)
 
 
 def render_template(filename, context):
