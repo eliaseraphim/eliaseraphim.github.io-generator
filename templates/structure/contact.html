@@ -1,0 +1,37 @@
+{% block contact %}
+                <!-- work and contact information -->
+                <h2>Contact</h2>
+                <div class="ps-xxl-4 ps-xl-3 ps-lg-2">
+                    <address>
+                        <i class="bi-envelope-fill"></i> <span id="personal-email">elia.deppe7@gmail.com</span>
+                        <button type="button" class="btn btn-light copy-btn" id="personal-email-copy-btn"
+                                onclick="copyEmail(`personal-email`); updateClipboardTooltip('#personal-email-copy-btn');"
+                                data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Copy to clipboard.">
+                            <i class="bi-clipboard-plus"></i>
+                        </button>
+                    </address>
+                    <address>
+                        <i class='bi-envelope-fill'></i> <span id="work-email">deppee@imsweb.com</span>
+                        <button type="button" class="btn btn-light copy-btn" id="work-email-copy-btn"
+                                onclick="copyEmail('work-email'); updateClipboardTooltip('#work-email-copy-btn');"
+                                data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Copy to clipboard.">
+                            <i class="bi-clipboard-plus"></i>
+                        </button>
+                    </address>
+                    <address>
+                        <a href="https://github.com/eliaseraphim" target="_blank">
+                            <i class="bi-github"></i> eliaseraphim
+                        </a>
+                    </address>
+                    <address>
+                        <a href="https://stackoverflow.com/users/11713970/eliaseraphim" target="_blank">
+                            <i class="bi-stack-overflow"></i> eliaseraphim
+                        </a>
+                    </address>
+                    <address>
+                        <a href="https://www.linkedin.com/in/elia-deppe-aa402a121/" target="_blank">
+                            <i class="bi-linkedin"></i> elia deppe
+                        </a>
+                    </address>
+                </div>
+{% endblock %}

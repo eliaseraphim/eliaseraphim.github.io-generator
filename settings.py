@@ -16,6 +16,7 @@ STATIC_FILENAMES = {
     },
     'js': {
         'output/static/js/buttons.js': 'static/js/buttons.js',
+        'output/static/js/tooltip.js': 'static/js/tooltip.js',
     },
 }
 
